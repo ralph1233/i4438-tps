@@ -21,10 +21,5 @@
         "panel": "dedicated"
       }
     }
-    // {
-    //   "label": "Run GetDeviceIp",
-    //   "dependsOn": ["Get Device Ip"],
-    //   "problemMatcher": []
-    // }
   ]
 }
