@@ -5,4 +5,4 @@ getDeviceIp:
 	python getDeviceIp.py
 
 buildApp:
-	cd tp4/ex1 && gradlew installDebug
+	cd tp4/ex2 && gradlew installDebug
