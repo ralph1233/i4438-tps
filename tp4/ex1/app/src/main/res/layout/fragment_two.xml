@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <TextView android:id="@+id/tvDisplayName" android:text="Name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  <TextView android:text="Select your level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioButton android:id="@+id/rbBeginner" android:text="Beginner" />
+    <RadioButton android:id="@+id/rbExpert" android:text="Expert" />
+  </RadioGroup>
+  <CheckBox android:id="@+id/cbShowLevel" android:text="Show my Level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  <Button android:id="@+id/btnNext2" android:text="Next" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
