@@ -44,31 +44,22 @@ public class MatchFragment extends Fragment {
     etPlayer2Set2 = view.findViewById(R.id.et_player2_set2);
     btnResult = view.findViewById(R.id.btn_result);
 
-    // Set default player names as shown in the image
-    etPlayer1Name.setText("Nadal");
-    etPlayer2Name.setText("Federer");
-
-    // Leave all score fields empty as per the image
-    etPlayer1Set1.setText("");
-    etPlayer1Set2.setText("");
-    etPlayer2Set1.setText("");
-    etPlayer2Set2.setText("");
-
     btnResult.setOnClickListener(v -> checkResult());
 
     return view;
   }
 
   private void checkResult() {
-    String player1Name = etPlayer1Name.getText().toString();
-    String player2Name = etPlayer2Name.getText().toString();
+    String player1Name = etPlayer1Name.getText().toString().trim();
+    String player2Name = etPlayer2Name.getText().toString().trim();
 
     // Validate that all score fields are filled
-    if (etPlayer1Set1.getText().toString().isEmpty() ||
-        etPlayer1Set2.getText().toString().isEmpty() ||
-        etPlayer2Set1.getText().toString().isEmpty() ||
-        etPlayer2Set2.getText().toString().isEmpty()) {
-      Toast.makeText(getActivity(), "Please fill all score fields", Toast.LENGTH_SHORT).show();
+    if (etPlayer1Set1.getText().toString().trim().isEmpty() ||
+        etPlayer1Set2.getText().toString().trim().isEmpty() ||
+        etPlayer2Set1.getText().toString().trim().isEmpty() ||
+        etPlayer2Set2.getText().toString().trim().isEmpty() ||
+        player1Name.isEmpty() || player2Name.isEmpty()) {
+      Toast.makeText(getActivity(), "All fields are required", Toast.LENGTH_SHORT).show();
       return;
     }
 
@@ -79,6 +70,14 @@ public class MatchFragment extends Fragment {
 
     boolean player1WinsSet1 = player1Set1 > player2Set1;
     boolean player1WinsSet2 = player1Set2 > player2Set2;
+
+    boolean player1DrawsSet1 = player1Set1 == player2Set1;
+    boolean player2DrawsSet1 = player1Set2 == player2Set2;
+
+    if (player1DrawsSet1 || player2DrawsSet1) {
+      Toast.makeText(getActivity(), "It's a draw in one of the sets!", Toast.LENGTH_SHORT).show();
+      return;
+    }
 
     if (player1WinsSet1 && player1WinsSet2) {
       listener.onMatchResult(player1Name);

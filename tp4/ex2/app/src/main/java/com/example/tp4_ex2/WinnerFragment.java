@@ -35,7 +35,7 @@ public class WinnerFragment extends Fragment {
     tvWinner.setText("The winner is " + winnerName);
 
     btnOk.setOnClickListener(v -> {
-      String date = etDate.getText().toString();
+      String date = etDate.getText().toString().trim();
       if (date.isEmpty()) {
         etDate.setError("Please enter a date");
         return;
