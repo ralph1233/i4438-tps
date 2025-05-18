@@ -74,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
             }
     
             String destination = destinationSpinner.getSelectedItem().toString();
+            if (destination.equals("None")) {
+                Toast.makeText(this, "Please select a destination", Toast.LENGTH_SHORT).show();
+                return;
+            }
             String airline = "";
             
             if (destination.equals("Beirut")) airline = "MEA";
