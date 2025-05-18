@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
 
-    <RadioGroup android:id="@+id/radioGroupLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:orientation="vertical">
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-        <RadioButton android:id="@+id/radioButtonFrench" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="French" />
+        <RadioButton android:id="@+id/radioFrench" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="French" />
 
-        <RadioButton android:id="@+id/radioButtonEnglish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English" />
-
+        <RadioButton android:id="@+id/radioEnglish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English" />
     </RadioGroup>
 
-    <Button android:id="@+id/showButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show" android:layout_below="@id/radioGroupLanguage" android:layout_marginTop="50dp" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/btnShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/radioGroup" android:text="Show" android:onClick="onShowButtonClick" />
 </RelativeLayout>

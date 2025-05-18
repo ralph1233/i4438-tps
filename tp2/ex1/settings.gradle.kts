@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "tp2_ex1"
 include(":app")
- 
