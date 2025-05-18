@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Name:" />
+    <EditText android:id="@+id/nameEditText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Destination:" />
+    <Spinner android:id="@+id/destinationSpinner"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+    <TextView android:id="@+id/airlineTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="gone" />
+    <Button android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+    <FrameLayout android:id="@+id/fragmentContainer"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+</LinearLayout>

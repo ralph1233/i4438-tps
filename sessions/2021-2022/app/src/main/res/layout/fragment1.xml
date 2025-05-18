@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+    <TextView android:id="@+id/infoTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <RadioGroup android:id="@+id/classRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/businessRadioButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Business Class" />
+        <RadioButton android:id="@+id/economicRadioButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Economic Class" />
+    </RadioGroup>
+    <CheckBox android:id="@+id/confirmCheckBox"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Confirm" />
+    <Button android:id="@+id/validateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validate" />
+</LinearLayout>
