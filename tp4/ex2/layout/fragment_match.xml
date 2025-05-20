@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+    <TableLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Player Name" />
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Set 1" />
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Set 2" />
+        </TableRow>
+        <TableRow>
+            <EditText android:id="@+id/et_player1_name"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:hint="Player 1" />
+            <EditText android:id="@+id/et_player1_set1"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:inputType="number" />
+            <EditText android:id="@+id/et_player1_set2"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:inputType="number" />
+        </TableRow>
+        <TableRow>
+            <EditText android:id="@+id/et_player2_name"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:hint="Player 2" />
+            <EditText android:id="@+id/et_player2_set1"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:inputType="number" />
+            <EditText android:id="@+id/et_player2_set2"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+    <Button android:id="@+id/btn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="RESULT" />
+</LinearLayout>
