@@ -82,7 +82,7 @@ pandoc -f html "$OUTPUT_TEXT" -o "${Name}.docx" \
   --table-of-contents \
   --toc-depth=2 \
   --reference-doc=template.docx 2>/dev/null || \
-pandoc -f html "$OUTPUT_TEXT" -o "../../${Name}.docx"
+pandoc -f html "$OUTPUT_TEXT" -o "../../word/${Name}.docx"
 
 rm "all_contents.txt"
 
