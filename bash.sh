@@ -1,8 +1,8 @@
 #!/bin/bash
 
-Name="tp2-ex3"
+Name="tp3-ex2"
 
-cd "tp2/ex3" || exit
+cd "tp3/ex2" || exit
 
 SESSION_FOLDER="."
 OUTPUT_TEXT="all_contents.txt"
