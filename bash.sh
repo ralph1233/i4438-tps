@@ -1,8 +1,8 @@
 #!/bin/bash
 
-Name="2023-2024"
+Name="tp1-ex2"
 
-cd "sessions/20232024" || exit
+cd "tp1/ex2" || exit
 
 SESSION_FOLDER="."
 OUTPUT_TEXT="all_contents.txt"
